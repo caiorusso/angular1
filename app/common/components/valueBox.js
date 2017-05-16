@@ -14,17 +14,17 @@
       }
     ],
     template: `
-    <div class="{{ $ctrl.gridClasses }}">
-      <div class="small-box {{ $ctrl.colorClass }}">
+    <div class="{{:: $ctrl.gridClasses }}">
+      <div class="small-box {{:: $ctrl.colorClass }}">
         <div class="inner">
           <h3>{{ $ctrl.value }}</h3>
-          <p>{{ $ctrl.text }}</p>
+          <p>{{:: $ctrl.text }}</p>
         </div>
-        <div class="icon"><i class="fa {{ $ctrl.iconClass }}"></i>
+        <div class="icon"><i class="fa {{:: $ctrl.iconClass }}"></i>
         </div>
       </div>
     </div>
     `
   })
-  
+
 })()
